@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "element-plus": "^2.3.6",
+    "test": "^3.3.0",
     "utils": "workspace:^",
     "vue": "^3.2.47"
   },

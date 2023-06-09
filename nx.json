@@ -3,9 +3,7 @@
     "default": {
       "runner": "nx/tasks-runners/default",
       "options": {
-        "cacheableOperations": [
-          "build"
-        ]
+        "cacheableOperations": ["build"]
       }
     }
   },
@@ -13,26 +11,22 @@
     "defaultBase": "main"
   },
   "namedInputs": {
-    "noMarkdown": [
-      "!{projectRoot}/**/*.md"
-    ]
+    "noMarkdown": ["!{projectRoot}/**/*.md"]
   },
   "targetDefaults": {
     "build": {
-      "dependsOn": [
-        "^build"
-      ],
-      "outputs": [
-        "{projectRoot}/dist"
-      ],
-      "inputs": [
-        "noMarkdown",
-        "^noMarkdown"
-      ]
+      "dependsOn": ["^build"],
+      "outputs": ["{projectRoot}/dist"],
+      "inputs": ["noMarkdown", "^noMarkdown"]
     },
     "dev": {
-      "dependsOn": [
-        "^build"
+      "dependsOn": ["^build"]
+    },
+    "lint": {
+      "inputs": [
+        "default",
+        "{workspaceRoot}/.eslintrc.json",
+        "{workspaceRoot}/.eslintignore"
       ]
     }
   }

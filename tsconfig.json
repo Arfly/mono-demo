@@ -6,15 +6,14 @@
     "module": "ESNext",
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
     "skipLibCheck": true,
-
-    /* Linting */
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
     "paths": {
+      "@apps/*": ["apps/*"],
       "@packages/*": ["packages/*"],
-      "@apps/*": ["apps/*"]
+      "test": ["packages/test/src/index.ts"]
     }
   },
   "include": [

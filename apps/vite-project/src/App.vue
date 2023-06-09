@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import HelloWorld from './components/HelloWorld.vue'
 import { generateUUID } from 'utils'
-
+import { test } from 'test'
+console.log(test())
 </script>
 
 <template>
@@ -14,7 +15,7 @@ import { generateUUID } from 'utils'
     </a>
   </div>
   <h1>{{ generateUUID() }}</h1>
-  <h2>Test Cahce</h2>
+  <h2>Cache</h2>
   <HelloWorld msg="Vite + Vue" />
 </template>
 
@@ -25,9 +26,11 @@ import { generateUUID } from 'utils'
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.vue:hover {
   filter: drop-shadow(0 0 2em #42b883aa);
 }
