@@ -1,1 +1,10 @@
 node_modules
+*.html
+.vscode
+/public
+/dist
+.vscode
+!.eslintrc.js
+!.prettierrc.js
+!.eslintrc-auto-import.json
+vite.config.js

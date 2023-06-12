@@ -1,35 +1,55 @@
 {
   "root": true,
-  "ignorePatterns": ["**/*"],
-  "plugins": ["@nx"],
-  "overrides": [
-    {
-      "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
-      "rules": {
-        "@nx/enforce-module-boundaries": [
-          "error",
-          {
-            "enforceBuildableLibDependency": true,
-            "allow": [],
-            "depConstraints": [
-              {
-                "sourceTag": "*",
-                "onlyDependOnLibsWithTags": ["*"]
-              }
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "files": ["*.ts", "*.tsx"],
-      "extends": ["plugin:@nx/typescript"],
-      "rules": {}
-    },
-    {
-      "files": ["*.js", "*.jsx"],
-      "extends": ["plugin:@nx/javascript"],
-      "rules": {}
+  "ignorePatterns": [
+    "dist",
+    "package.json",
+    "tsconfig.json",
+    "project.json",
+    ".eslintrc.json",
+    "tsconfig.node.json",
+    "vite.config.js",
+    "vite.config.ts",
+    "nx.json"
+  ],
+  "env": {
+    "es6": true,
+    "browser": true,
+    "node": true,
+    "vue/setup-compiler-macros": true
+  },
+  "plugins": [
+    "@nx",
+    "prettier",
+    "eslint-plugin-vue",
+    "@typescript-eslint",
+    "import"
+  ],
+  "extends": [
+    "airbnb-base",
+    "plugin:vue/vue3-essential",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:vue/vue3-recommended",
+    "prettier"
+  ],
+  "parser": "vue-eslint-parser",
+  "parserOptions": {
+    "parser": "@typescript-eslint/parser",
+    "ecmaFeatures": {
+      "tsx": true,
+      "jsx": true
     }
-  ]
+  },
+  "rules": {
+    "vue/multi-word-component-names": "off",
+    "prettier/prettier": "error",
+    "no-restricted-syntax": [
+      "error",
+      "ForInStatement",
+      "LabeledStatement",
+      "WithStatement"
+    ]
+  },
+  "settings": {
+    "import/extensions": [".js", ".jsx", ".ts", ".tsx", ".vue"]
+  }
 }

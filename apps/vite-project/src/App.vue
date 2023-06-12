@@ -1,8 +1,6 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
-import { generateUUID } from 'utils'
-import { test } from 'test'
-console.log(test())
+import { generateUUID } from 'utils';
+import HelloWorld from './components/HelloWorld.vue';
 </script>
 
 <template>
