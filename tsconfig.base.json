@@ -1,0 +1,16 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "ESNext",
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "skipLibCheck": true,
+    "baseUrl": "./",
+    "paths": {
+      "@apps/*": ["apps/*"],
+      "@packages/*": ["packages/*"],
+      "test": ["packages/test/src/index.ts"]
+    }
+  },
+  "exclude": ["dist", "node_modules", "**/*.spec.ts"]
+}

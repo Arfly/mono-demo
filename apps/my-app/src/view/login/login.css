@@ -1,0 +1,60 @@
+.login-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-card {
+  box-shadow: 0 4px 8px -4px rgba(0, 0, 0, 0.13),
+    0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 12px 24px 16px rgba(0, 0, 0, 0.04);
+  padding-top: 40px;
+  padding-bottom: 16px;
+  width: 400px;
+}
+
+.phone-area-selection {
+  width: 150px;
+}
+
+.phone-code {
+  display: inline-block;
+  width: 40px;
+}
+
+.third-login-icon {
+  width: 28px;
+  height: 28px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  vertical-align: middle;
+  background-image: url('../../assets/icons/social-media.png');
+}
+
+.weChat {
+  background-position: 0 -59.5px;
+}
+
+.weChatTeam {
+  background-position: 0 -89px;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+
+.login-more-container {
+  /* position: absolute;
+  bottom: 10px;
+  width: 100%; */
+}
+
+.third-part-wrapper {
+  /* justify-content: center;
+  width: 100%;
+  padding-bottom: 23px; */
+}

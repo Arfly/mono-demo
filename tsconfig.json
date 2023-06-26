@@ -1,20 +1,10 @@
 {
   "compilerOptions": {
-    "baseUrl": "./",
-    "target": "ES2020",
     "useDefineForClassFields": true,
-    "module": "ESNext",
-    "lib": ["ES2020", "DOM", "DOM.Iterable"],
-    "skipLibCheck": true,
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true,
-    "paths": {
-      "@apps/*": ["apps/*"],
-      "@packages/*": ["packages/*"],
-      "test": ["packages/test/src/index.ts"]
-    }
+    "noFallthroughCasesInSwitch": true
   },
   "include": [
     "apps/**/*.ts",
@@ -26,5 +16,5 @@
     "packages/**/*.tsx",
     "packages/**/*.vue"
   ],
-  "exclude": ["dist", "node_modules", "**/*.spec.ts"]
+  "extends": "./tsconfig.base.json"
 }
