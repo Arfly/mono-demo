@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint \"./**/*.{js,jsx,json,ts,vue}\"",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "create:app": "cd apps && pnpm create vite --template vue-ts && pnpm i",
+    "create:lib": "nx g @nx/js:lib --bundler=vite --unitTestRunner=none && pnpm i"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx,vue}": [
@@ -25,6 +27,7 @@
     "@types/node": "18.7.1",
     "@typescript-eslint/eslint-plugin": "^5.58.0",
     "@typescript-eslint/parser": "^5.58.0",
+    "@vitest/ui": "^0.31.0",
     "eslint": "^8.42.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-prettier": "8.1.0",
@@ -33,11 +36,16 @@
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-vue": "^9.14.1",
     "husky": "^8.0.3",
+    "jsdom": "~20.0.3",
     "lint-staged": "^13.2.2",
     "nx": "16.3.2",
     "prettier": "^2.6.2",
     "typescript": "~5.0.2",
-    "verdaccio": "^5.0.4"
+    "vite": "^4.3.4",
+    "vite-plugin-dts": "~1.7.1",
+    "vite-plugin-eslint": "^1.8.1",
+    "vite-tsconfig-paths": "^4.0.2",
+    "vitest": "^0.31.0"
   },
   "nx": {
     "targets": {}

@@ -13,6 +13,7 @@
     "paths": {
       "@apps/*": ["apps/*"],
       "@packages/*": ["packages/*"],
+      "lib": ["packages/lib/src/index.ts"],
       "test": ["packages/test/src/index.ts"]
     }
   },
