@@ -1,0 +1,9 @@
+{
+  "generators": {
+    "vue3-generator": {
+      "factory": "./src/generators/vue3-generator/generator",
+      "schema": "./src/generators/vue3-generator/schema.json",
+      "description": "vue3-generator generator"
+    }
+  }
+}

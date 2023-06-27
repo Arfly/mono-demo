@@ -40,6 +40,14 @@
     }
   },
   "rules": {
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": false,
+        "optionalDependencies": false,
+        "peerDependencies": false
+      }
+    ],
     "vue/multi-word-component-names": "off",
     "prettier/prettier": "error",
     "no-restricted-syntax": [
@@ -51,5 +59,12 @@
   },
   "settings": {
     "import/extensions": [".js", ".jsx", ".ts", ".tsx", ".vue"]
-  }
+  },
+  "overrides": [
+    {
+      "files": "*.json",
+      "parser": "jsonc-eslint-parser",
+      "rules": {}
+    }
+  ]
 }
