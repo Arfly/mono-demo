@@ -1,1 +1,3 @@
-export * from './lib/is-even';
+export default function isEven(x: number): boolean {
+  return x % 2 === 0;
+}

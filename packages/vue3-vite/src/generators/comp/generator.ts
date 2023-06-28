@@ -5,13 +5,10 @@ import {
   Tree,
 } from '@nx/devkit';
 import * as path from 'path';
-import { Vue3GeneratorGeneratorSchema } from './schema';
+import { CompGeneratorSchema } from './schema';
 
-export async function vue3GeneratorGenerator(
-  tree: Tree,
-  options: Vue3GeneratorGeneratorSchema
-) {
-  const projectRoot = `libs/${options.name}`;
+export async function compGenerator(tree: Tree, options: CompGeneratorSchema) {
+  const projectRoot = `packages/${options.name}`;
   addProjectConfiguration(tree, options.name, {
     root: projectRoot,
     projectType: 'library',
@@ -22,4 +19,4 @@ export async function vue3GeneratorGenerator(
   await formatFiles(tree);
 }
 
-export default vue3GeneratorGenerator;
+export default compGenerator;

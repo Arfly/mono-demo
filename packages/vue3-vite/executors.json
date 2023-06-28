@@ -1,9 +1,14 @@
 {
   "executors": {
-    "vue3-executor": {
-      "implementation": "./src/executors/vue3-executor/executor",
-      "schema": "./src/executors/vue3-executor/schema.json",
-      "description": "vue3-executor executor"
+    "app": {
+      "implementation": "./src/executors/app/executor",
+      "schema": "./src/executors/app/schema.json",
+      "description": "app executor"
+    },
+    "comp": {
+      "implementation": "./src/executors/comp/executor",
+      "schema": "./src/executors/comp/schema.json",
+      "description": "comp executor"
     }
   }
 }

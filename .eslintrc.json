@@ -1,16 +1,6 @@
 {
   "root": true,
-  "ignorePatterns": [
-    "dist",
-    "package.json",
-    "tsconfig.json",
-    "project.json",
-    ".eslintrc.json",
-    "tsconfig.node.json",
-    "vite.config.js",
-    "vite.config.ts",
-    "nx.json"
-  ],
+  "ignorePatterns": ["dist", "node_modules", "tools"],
   "env": {
     "es6": true,
     "browser": true,
@@ -18,14 +8,15 @@
     "vue/setup-compiler-macros": true
   },
   "plugins": [
-    "@nx",
     "prettier",
     "eslint-plugin-vue",
     "@typescript-eslint",
-    "import"
+    "eslint-plugin-import",
+    "eslint-plugin-react"
   ],
   "extends": [
     "airbnb-base",
+    "airbnb-typescript",
     "plugin:vue/vue3-essential",
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:vue/vue3-recommended",
@@ -37,17 +28,13 @@
     "ecmaFeatures": {
       "tsx": true,
       "jsx": true
-    }
+    },
+    "project": "./tsconfig.base.json",
+    "extraFileExtensions": [".vue"]
   },
   "rules": {
-    "import/no-extraneous-dependencies": [
-      "error",
-      {
-        "devDependencies": false,
-        "optionalDependencies": false,
-        "peerDependencies": false
-      }
-    ],
+    "react/jsx-filename-extension": [1, { "allow": "as-needed" }],
+    "import/no-extraneous-dependencies": "off",
     "vue/multi-word-component-names": "off",
     "prettier/prettier": "error",
     "no-restricted-syntax": [
@@ -55,10 +42,19 @@
       "ForInStatement",
       "LabeledStatement",
       "WithStatement"
+    ],
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "js": "never",
+        "jsx": "never",
+        "ts": "never",
+        "tsx": "never",
+        "json": "never",
+        "vue": "never"
+      }
     ]
-  },
-  "settings": {
-    "import/extensions": [".js", ".jsx", ".ts", ".tsx", ".vue"]
   },
   "overrides": [
     {

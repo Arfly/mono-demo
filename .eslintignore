@@ -8,3 +8,7 @@ node_modules
 !.prettierrc.js
 !.eslintrc-auto-import.json
 vite.config.js
+vite.config.ts
+*.json
+jest.config.ts
+jest.preset.js

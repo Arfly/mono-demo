@@ -1,9 +1,9 @@
-import { Vue3ExecutorExecutorSchema } from './schema';
+import { AppExecutorSchema } from './schema';
 import executor from './executor';
 
-const options: Vue3ExecutorExecutorSchema = {};
+const options: AppExecutorSchema = {};
 
-describe('Vue3Executor Executor', () => {
+describe('App Executor', () => {
   it('can run', async () => {
     const output = await executor(options);
     expect(output.success).toBe(true);
