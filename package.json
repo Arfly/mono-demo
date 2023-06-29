@@ -6,7 +6,8 @@
     "create:lib": "nx generate @nx/js:library --bundler=vite --unitTestRunner=none",
     "create:app": "nx g nx-vite-vue:app",
     "create:comp": "nx g nx-vite-vue:comp",
-    "lint": "eslint \"./**/*.{js,jsx,json,ts,vue}\""
+    "lint": "eslint \"./**/*.{js,jsx,json,ts,vue}\"",
+    "del": "nx g remove"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx,vue}": [
@@ -45,7 +46,7 @@
     "jsonc-eslint-parser": "^2.3.0",
     "lint-staged": "^13.2.2",
     "nx": "16.4.0",
-    "nx-vite-vue": "^0.0.1",
+    "nx-vite-vue": "^0.1.6",
     "prettier": "^2.6.2",
     "ts-jest": "^29.1.0",
     "ts-node": "10.9.1",

@@ -36,6 +36,8 @@ pnpm create:lib
 
 ```shell
 nx g @nx/workspace:remove <package-name>
+#or
+pnpm del <package-name>
 ```
 
 ### Dev Server
