@@ -46,7 +46,7 @@
     "jsonc-eslint-parser": "^2.3.0",
     "lint-staged": "^13.2.2",
     "nx": "16.4.0",
-    "nx-vite-vue": "^0.1.6",
+    "nx-vite-vue": "^0.1.8",
     "prettier": "^2.6.2",
     "ts-jest": "^29.1.0",
     "ts-node": "10.9.1",
