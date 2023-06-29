@@ -32,6 +32,12 @@ Create lib command is same as `nx g @nx/js:lib`.We put this command into the roo
 pnpm create:lib
 ```
 
+### Remove Package
+
+```shell
+nx g @nx/workspace:remove <package-name>
+```
+
 ### Dev Server
 
 If you created a package or app.You can use the below command to run the dev server if the project has the dev server command.You can check the command in project.json file.When you are develop a project you can use any local packages with `import` statement like:

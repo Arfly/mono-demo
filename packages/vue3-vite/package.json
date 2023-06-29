@@ -1,7 +1,0 @@
-{
-  "name": "@org/vue3-vite",
-  "version": "0.0.1",
-  "type": "commonjs",
-  "generators": "./generators.json",
-  "executors": "./executors.json"
-}

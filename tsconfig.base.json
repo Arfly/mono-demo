@@ -16,8 +16,7 @@
     "baseUrl": ".",
     "paths": {
       "@org/is-even": ["packages/is-even/src/index.ts"],
-      "@org/is-odd": ["packages/is-odd/src/index.ts"],
-      "@org/vue3-vite": ["packages/vue3-vite/src/index.ts"]
+      "@org/is-odd": ["packages/is-odd/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"],
