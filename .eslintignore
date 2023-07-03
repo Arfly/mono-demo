@@ -12,3 +12,4 @@ vite.config.ts
 *.json
 jest.config.ts
 jest.preset.js
+commitlint.config.js
