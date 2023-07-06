@@ -1,3 +1,74 @@
 {
-  "eslint.validate": ["json"]
+  "editor.tabSize": 2,
+  "editor.rulers": [120],
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "eslint.enable": true,
+  "eslint.format.enable": true,
+  "eslint.codeAction.showDocumentation": {
+    "enable": true
+  },
+  "eslint.options": {
+    "extensions": [".js", ".vue"]
+  },
+  "eslint.validate": ["vue", "html", "javascript", "typescript"],
+  "eslint.workingDirectories": ["./"],
+  "eslint.trace.server": "verbose",
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "files.associations": {
+    "*.tsx": "typescriptreact",
+    "*.js": "javascript",
+    "*.rogueAnimation": "json",
+    "*.rogueScene": "json",
+    "*.roguePrefab": "json"
+  },
+  "git.autofetch": true,
+  "prettier.enable": true,
+  "volar.autoCompleteRefs": true,
+  "volar.updateImportsOnFileMove.enabled": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "files.eol": "\n",
+  "prettier.singleAttributePerLine": true,
+  "prettier.bracketSameLine": true,
+  "prettier.singleQuote": true,
+  "prettier.arrowParens": "avoid",
+  "files.autoGuessEncoding": true,
+  "prettier.trailingComma": "none",
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "prettier.semi": false,
+  "workbench.colorCustomizations": {},
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "prettier.embeddedLanguageFormatting": "off",
+  "[python]": {
+    "editor.formatOnType": true
+  },
+  "diffEditor.ignoreTrimWhitespace": false,
+  "html.format.enable": false,
+  "eslint.run": "onSave",
+  "scss.lint.duplicateProperties": "warning",
+  "less.lint.duplicateProperties": "warning",
+  "css.lint.duplicateProperties": "warning",
+  "editor.formatOnSave": true,
+  "stylelint.packageManager": "yarn",
+  "stylelint.validate": ["css", "less", "vue", "html", "postcss"],
+  "eslint.ignoreUntitled": true,
+  "volar.vueserver.json.customBlockSchemaUrls": {},
+  "editor.codeActionsOnSave": {
+    "source.fixAll.stylelint": true,
+    "source.fixAll.eslint": true,
+    "source.organizeImports": false
+  }
 }
