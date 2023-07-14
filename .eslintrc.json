@@ -33,7 +33,12 @@
     "extraFileExtensions": [".vue"]
   },
   "rules": {
-    "react/jsx-filename-extension": [1, { "allow": "as-needed" }],
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "allow": "as-needed"
+      }
+    ],
     "import/no-extraneous-dependencies": "off",
     "vue/multi-word-component-names": "off",
     "prettier/prettier": "error",
@@ -62,5 +67,13 @@
       "parser": "jsonc-eslint-parser",
       "rules": {}
     }
-  ]
+  ],
+  "settings": {
+    "import/resolver": {
+      "alias": {
+        "map": [],
+        "extensions": [".ts", ".js", ".jsx", ".json"]
+      }
+    }
+  }
 }

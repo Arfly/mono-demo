@@ -14,10 +14,7 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {
-      "@org/Test": ["packages/Test/src/components/MyComponent.vue"],
-      "@org/log": ["packages/log/src/index.ts"]
-    }
+    "paths": {}
   },
   "exclude": ["node_modules", "tmp"],
   "include": ["apps", "packages"]
