@@ -15,8 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@org/is-even": ["packages/is-even/src/index.ts"],
-      "@org/is-odd": ["packages/is-odd/src/index.ts"]
+      "@org/Test": ["packages/Test/src/components/MyComponent.vue"],
+      "@org/log": ["packages/log/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"],

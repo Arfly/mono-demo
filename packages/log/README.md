@@ -1,7 +1,7 @@
-# is-even
+# log
 
 This library was generated with [Nx](https://nx.dev).
 
 ## Building
 
-Run `nx build is-even` to build the library.
+Run `nx build log` to build the library.
